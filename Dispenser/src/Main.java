@@ -494,7 +494,11 @@ public class Main extends Application {
 	
 
 	public static void main(String[] args) {
-			
+		ProcessCustomerQueue queue = new ProcessCustomerQueue();
+		
+		System.out.println(queue.nextCustomerName());
+		System.out.println(queue.nextCustomerProduct());
+		
 		Application.launch(args);
 		
 	}
